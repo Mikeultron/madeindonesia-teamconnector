@@ -1,7 +1,9 @@
 import dynamic from "next/dynamic";
 
-const HomeView = dynamic(() => import("views/Home"));
+const InstructionsView = dynamic(() => import("views/Instructions"), {
+  ssr: false,
+});
 
-export default function HomePage() {
-  return <HomeView />;
+export default function InstructionsPage() {
+  return <InstructionsView />;
 }

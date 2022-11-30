@@ -17,6 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "atoms/*": ["src/components/atoms/*"],
+      "templates/*": ["src/components/templates/*"],
       "views/*": ["src/views/*"]
     }
   },
