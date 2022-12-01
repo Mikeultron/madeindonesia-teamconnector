@@ -1,0 +1,42 @@
+@import "styles/colors";
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    p {
+      color: white;
+      font-weight: 700;
+      span {
+        color: $yellow;
+      }
+    }
+    .sliderContainer {
+      width: 100%;
+      datalist {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        writing-mode: vertical-lr;
+        width: 100%;
+        margin-top: -20px;
+        option {
+          color: #fff;
+          padding: 0;
+          transform: rotateZ(-90deg);
+          font-weight: 700;
+          span {
+            color: $yellow;
+          }
+        }
+      }
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

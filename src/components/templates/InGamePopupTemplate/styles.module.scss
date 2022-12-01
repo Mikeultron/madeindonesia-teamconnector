@@ -1,0 +1,21 @@
+@import "styles/mixins";
+@import "styles/colors";
+
+.wrapper {
+  @include overlayWrapper;
+  .container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px 60px 40px;
+    flex-direction: column;
+    max-width: 1280px;
+    gap: 20px;
+    @include mediaQuery(xl) {
+      padding: 100px 40px 10px 99px;
+    }
+    .title {
+      @include titleContainer;
+    }
+  }
+}

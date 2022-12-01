@@ -1,0 +1,15 @@
+@import "styles/colors";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .instructionText {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    span {
+      color: $yellow;
+    }
+  }
+}

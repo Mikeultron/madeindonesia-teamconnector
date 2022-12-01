@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  input {
+    &:focus {
+      border: 2px solid #919293;
+    }
+    outline: none;
+    background-color: #0d0e11;
+    border: 2px solid #141518;
+    padding: 16px 12px;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #fff;
+  }
+}

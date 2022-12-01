@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .container {
+    width: 100%;
+    outline: none;
+    background-color: #0d0e11;
+    border: 2px solid #141518;
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    .iconButton {
+      background-color: #141518;
+      display: flex;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+    }
+    input {
+      font-size: 18px;
+      color: white;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      padding: 0 8px;
+    }
+  }
+}

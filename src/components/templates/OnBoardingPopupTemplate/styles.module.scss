@@ -1,0 +1,37 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.wrapper {
+  @include overlayWrapper;
+  .container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px 0 40px;
+    flex-direction: column;
+    max-width: 1280px;
+    gap: 20px;
+    @include mediaQuery(xl) {
+      padding: 100px 40px 0 99px;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .intro {
+      display: flex;
+      flex-direction: column;
+      gap: 37px;
+      .title {
+        @include titleContainer;
+      }
+    }
+    .wheel {
+      display: flex;
+      background: no-repeat top url("/images/wheel.png");
+      background-size: contain;
+      max-width: 600px;
+      width: 100%;
+      height: 540px;
+    }
+  }
+}
