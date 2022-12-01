@@ -15,6 +15,8 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
     "paths": {
       "atoms/*": ["src/components/atoms/*"],
       "templates/*": ["src/components/templates/*"],

@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
 
-const InstructionsView = dynamic(() => import("views/Instructions"), {
+const WheelView = dynamic(() => import("views/Wheel"), {
   ssr: false,
 });
 
-export default function InstructionsPage() {
-  return <InstructionsView />;
+export default function WheelPage() {
+  return <WheelView />;
 }

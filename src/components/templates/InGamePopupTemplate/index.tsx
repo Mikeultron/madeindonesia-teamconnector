@@ -7,25 +7,22 @@ interface IProps {
   subTitle?: string;
 }
 
-const OnBoardingTemplate = ({
+const InGamePopupTemplate = ({
   children,
-  title = "Welkom bij",
+  title = "How to play",
   subTitle = "TeamConnector 2.0",
 }: IProps) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <div className={styles.intro}>
-          <div className={styles.title}>
-            <p>{title}</p>
-            <h1>{subTitle}</h1>
-          </div>
-          {children}
+        <div className={styles.title}>
+          <p>{title}</p>
+          <h1>{subTitle}</h1>
         </div>
-        <div className={styles.wheel}></div>
+        {children}
       </div>
     </div>
   );
 };
 
-export default OnBoardingTemplate;
+export default InGamePopupTemplate;

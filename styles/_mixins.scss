@@ -21,3 +21,24 @@
     }
   }
 }
+
+@mixin titleContainer {
+  p {
+    color: $green;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+  }
+}
+
+@mixin overlayWrapper {
+  background: $overlayBackground;
+  overflow: auto;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+}

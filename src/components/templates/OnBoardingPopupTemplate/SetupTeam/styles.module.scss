@@ -3,11 +3,13 @@
 
 .container {
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   .inputs {
     display: flex;
     flex-direction: column;
     max-width: 300px;
     gap: 40px;
-    margin-top: 40px;
   }
 }

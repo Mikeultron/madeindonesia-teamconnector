@@ -2,14 +2,13 @@
 @import "styles/mixins";
 
 .wrapper {
-  background: #101215;
-  overflow: hidden;
+  @include overlayWrapper;
   .container {
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 40px;
+    padding: 60px 40px 0 40px;
     flex-direction: column;
     max-width: 1280px;
     gap: 20px;
@@ -23,24 +22,7 @@
       flex-direction: column;
       gap: 37px;
       .title {
-        p {
-          color: $green;
-          font-size: 16px;
-          font-weight: 700;
-        }
-        h1 {
-          color: #fff;
-          font-weight: 700;
-          font-size: 28px;
-        }
-      }
-      ul {
-        margin-left: 20px;
-        li {
-          font-size: 16px;
-          color: #fff;
-          line-height: 30px;
-        }
+        @include titleContainer;
       }
     }
     .wheel {
@@ -49,7 +31,7 @@
       background-size: contain;
       max-width: 600px;
       width: 100%;
-      height: 600px;
+      height: 540px;
     }
   }
 }
